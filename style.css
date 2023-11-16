@@ -4,12 +4,12 @@ body, header, footer {
 }
 
 body {
-	background: linear-gradient(to right, #FF5000, #A000FF);
+	background: linear-gradient(to right, #DC3500, #9000DC);
 }
 
 main {
-	margin: 5% 2%;
-	background: #FFFFAF;
+	margin: 5% 18%;
+	background: #FFFFE8;
 	border-radius: 10px;
 	padding: 0.5% 2%;
 	box-shadow: 0 0 1vw #101010;
@@ -31,6 +31,21 @@ footer div {
 	text-align: center;
 }
 
+.logo {
+	background: #5575FF;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+:target:before {
+	content:'';
+	display:block;
+	height:60px;
+	margin-top:-60px;
+}
+
 /* A SUPPRIMER BIENTOT */
 .bg-image{
 	background-size: cover;
@@ -48,14 +63,19 @@ footer div {
 
 /* NAV-BAR */
 
-#menu {
-	background:#202020;
-	height: 45px;
+.top-bar {
+	background:#202025;
+	height: 55px;
 	margin: 0 auto;
 	width: 100%;
 	position: fixed;
 	top:0;
 	left: 0;
+}
+
+#menu {
+	margin: 0 auto;
+	width: 75%;
 }
 
 #menu ul, #menu li {
@@ -74,9 +94,13 @@ footer div {
 	position: relative;
 }
 
+#menu li.empty {
+	margin: 0vw;
+}
+
 #menu a {
 	display: block;
-	line-height: 45px;
+	line-height: 55px;
 	padding: 0 14px;
 	text-decoration: none;
 	color: #F2F2F2;
@@ -96,7 +120,7 @@ footer div {
 #menu ul.sub-menu {
 	height: auto;
 	overflow: hidden;
-	width: 170px;
+	width: 320px;
 	background: #444444;
 	position: absolute;
 	z-index: 99;
@@ -125,3 +149,4 @@ footer div {
 #menu a:visited{
 	color: #F2F2F2;
 }
+
