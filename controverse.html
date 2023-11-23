@@ -6,7 +6,7 @@
 
     <style type="text/css">
         #mynetwork {
-            width: 100vw;
+            width: 70vw;
             height: 100vh;
             border: 1px solid lightgray;
         }
@@ -18,24 +18,24 @@
 <script type="text/javascript">
     // create an array with nodes
     var nodes = new vis.DataSet([
-        {id: 1, label: 'HRW'},
-        {id: 2, label: 'WAPOR'},
-        {id: 3, label: 'ESOMAR'},
-        {id: 4, label: 'IFOP'},
-        {id: 5, label: 'IPSOS'},
-        {id: 6, label: 'BVA'},
-        {id: 7, label: 'CSA'},
-        {id: 8, label: 'SurveyMonkey'},
-        {id: 9, label: 'INSEE'},
-        {id: 10, label: 'ACS'},
-        {id: 11, label: 'La Loi'},
-        {id: 12, label: 'CEVIPOF'},
-        {id: 13, label: 'SCRIBBR'},
-        {id: 14, label: 'CNRS'},
-        {id: 15, label: 'Le Livre Scolaire'},
-        {id: 16, label: 'Observation société'},
-        {id: 17, label: 'Le Monde'},
-        {id: 18, label: 'Ouest France'}
+        {id: 1, label: 'HRW', data: 'lol'},
+        {id: 2, label: 'WAPOR', data: 'lol'},
+        {id: 3, label: 'ESOMAR', data: 'lol'},
+        {id: 4, label: 'IFOP', data: 'lol'},
+        {id: 5, label: 'IPSOS', data: 'lol'},
+        {id: 6, label: 'BVA', data: 'lol'},
+        {id: 7, label: 'CSA', data: 'lol'},
+        {id: 8, label: 'SurveyMonkey', data: 'lol'},
+        {id: 9, label: 'INSEE', data: 'lol'},
+        {id: 10, label: 'ACS', data: 'lol'},
+        {id: 11, label: 'La Loi', data: 'lol'},
+        {id: 12, label: 'CEVIPOF', data: 'lol'},
+        {id: 13, label: 'SCRIBBR', data: 'lol'},
+        {id: 14, label: 'CNRS', data: 'lol'},
+        {id: 15, label: 'Le Livre Scolaire', data: 'lol'},
+        {id: 16, label: 'Observation société', data: 'lol'},
+        {id: 17, label: 'Le Monde', data: 'lol'},
+        {id: 18, label: 'Ouest France', data: 'lol'}
     ]);
 
     // create an array with edges
@@ -57,7 +57,20 @@
     var options = {};
 
     // initialize your network!
-    var network = new vis.Network(container, data, options);
+	var network = new vis.Network(container, data, options);
+	network.on('selectNode', function(properties) {
+			var nodeId = network.getSelectedNodes();
+			var node = nodes.get(nodeId[0]);
+			if (!Array.isArray(node)) {
+					console.log('Clicked node : ', node);
+					const r = document.createElement("h3");
+					r.innerText = node.label;
+					document.body.appendChild(r);
+					const d = document.createElement("p");
+					d.innerText = node.data;
+					document.body.appendChild(d);
+				}
+		});
 </script>
 </body>
 
