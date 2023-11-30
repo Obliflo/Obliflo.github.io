@@ -3,20 +3,81 @@
 <head>
     <script type="text/javascript" src="vis-4.21.0/dist/vis.js"></script>
     <link href="vis-4.21.0/dist/vis.css" rel="stylesheet" type="text/css" />
-
+		<link href="style.css" rel="stylesheet"/>
     <style type="text/css">
+              
+        .flex_container{
+        	display: flex;
+        }
+        
+        .flex-child {
+        	flex:1;
+        	border: 2px solid yellow;
+        }
+        
         #mynetwork {
-            width: 70vw;
-            height: 100vh;
-            border: 1px solid lightgray;
-	    float: left;
+            flex:1;
+            height: 70vh;
+            z-index:-999;
         }
     </style>
 </head>
 <body>
-<div id="mynetwork"></div>
-<div id="data_cont"></div>
-
+<header>
+		<div class="top-bar">
+			<nav id="menu"> 
+				<ul>
+					<li><a href="index.html"><span class="logo">PSH</span> Sondages </a></li>
+					<li class="empty"></li>
+					<li><a class="dropdown-arrow" href="etat_des_lieux.html">Etats des lieux</a>
+						<ul class="sub-menu">
+							<li><a href="etat_des_lieux.html#p1">Comment sont fait les sondages ?</a></li>
+							<li><a href="etat_des_lieux.html#p2">Interprétation, cible, etc...</a></li>
+							<li><a href="etat_des_lieux.html#p3">Sous partie 3 (ptet)</a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-arrow" href="#">Fiabilité des sondages</a>
+						<ul class="sub-menu">
+							<li><a href="#">Sous partie 1</a></li>
+							<li><a href="#">Sous partie 2</a></li>
+							<li><a href="#">Sous partie 3</a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-arrow" href="#">Influence</a>
+						<ul class="sub-menu">
+							<li><a href="#">Politique</a></li>
+							<li><a href="#">Marketing</a></li>
+							<li><a href="#">Quotidien</a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-arrow" href="#">Prospective</a>
+						<ul class="sub-menu">
+							<li><a href="#">Sous partie 1</a></li>
+							<li><a href="#">Sous partie 2</a></li>
+							<li><a href="#">Sous partie 3</a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-arrow" href="#">A` propos</a>
+						<ul class="sub-menu">
+							<li><a href="#">Bibliographie</a></li>
+							<li><a href="#">Iconographie</a></li>
+							<li><a href="#">Nous contacter</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>   
+	</header>
+	<main class="flex-container">
+<div id="mynetwork" ></div>
+<div id="data_cont" class="flex-child"></div>
+	</main>
+	<footer>
+		<div>
+			Contactez nous !
+		</div>
+	</footer>
+	
 <script type="text/javascript">
     // create an array with nodes
     var nodes = new vis.DataSet([
