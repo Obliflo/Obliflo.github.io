@@ -6,18 +6,15 @@
 		<link href="style.css" rel="stylesheet"/>
     <style type="text/css">
               
-        .flex_container{
-        	display: flex;
-        }
-        
-        .flex-child {
-        	flex:1;
-        	border: 2px solid yellow;
+        .container{
+        	height: 80vh;
+        	padding: 1%;
         }
         
         #mynetwork {
-            flex:1;
+            float: left;
             height: 70vh;
+            width: 50%;
             z-index:-999;
         }
     </style>
@@ -68,17 +65,11 @@
 			</nav>
 		</div>   
 	</header>
-	<main class="flex-container alternate_layout">
+	<main class="container alternate_layout">
 <div id="mynetwork" ></div>
-<div id="data_cont" class="flex-child"></div>
-<div class="flex-child"> Essai n°292,5 </div>
+<div id="data_cont" class="cont-child"></div>
 	</main>
-	<footer>
-		<div>
-			Contactez nous !
-		</div>
-	</footer>
-	
+
 <script type="text/javascript">
     // create an array with nodes
     var nodes = new vis.DataSet([
