@@ -20,9 +20,8 @@ p {
 }
 
 img.float-right {
-	margin: 10px;
-	padding: 10px;
-	background-color: #FCFCFC;
+	margin: 10px 0px 10px 20px;
+	background-color: #F5F5F5;
 	border-radius: 10px;
 }
 
@@ -79,21 +78,6 @@ footer div {
 	display:block;
 	height:60px;
 	margin-top:-60px;
-}
-
-/* A SUPPRIMER BIENTOT */
-.bg-image{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-image: url('https://img.freepik.com/photos-gratuite/fond-ecran-colore-multicolore-ia-generative_91128-2257.jpg?w=2000');
-	height: 100vh;
-}
-
-.page{
-	position: center;
-	height: 100%;
 }
 
 /* NAV-BAR */
