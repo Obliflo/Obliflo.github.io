@@ -3,6 +3,37 @@ body, header, footer {
 	margin: 0;
 }
 
+h, h1, h2, h3 {
+	clear: both;
+}
+
+p {
+	text-align: justify;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+img.float-right {
+	margin: 10px;
+	padding: 10px;
+	background-color: #FCFCFC;
+	border-radius: 10px;
+}
+
+
+img.float-left {
+	margin: 10px;
+	padding: 10px;
+	background-color: #FCFCFC;
+	border-radius: 10px;
+}
+
 body {
 	background: linear-gradient(to right, #DC3500, #9000DC);
 }
