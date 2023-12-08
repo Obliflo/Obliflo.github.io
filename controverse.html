@@ -50,11 +50,11 @@
 				</ul>
 			</nav>
 		</div>   
-	</header>
-	<main class="container alternate_layout">
-<div id="mynetwork" ></div>
-<div id="data_cont" class="cont-child"></div>
-	</main>
+</header>
+<main class="container alternate_layout">
+	<div id="mynetwork" ></div>
+	<div id="data_cont" class="cont-child"></div>
+</main>
 
 <script type="text/javascript">
     // create an array with nodes
@@ -114,6 +114,7 @@
 					const d = document.createElement("p");
 					d.innerText = node.data;
 					data_container.appendChild(d);
+					//TODO add a link to the website of the actor
 				}
 		});
 </script>
