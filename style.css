@@ -3,12 +3,24 @@ body, header, footer {
 	margin: 0;
 }
 
-h, h1, h2, h3 {
+h, h1, h2{
 	clear: both;
 }
 
 p {
 	text-align: justify;
+}
+
+.container{
+	height: 80vh;
+	padding: 1%;
+}
+        
+#mynetwork {
+	float: left;
+	height: 70vh;
+	width: 50%;
+	z-index:-999;
 }
 
 .float-left {
