@@ -1,3 +1,53 @@
+/* Responsive design */
+
+@media (min-width: 650px) {
+	main {
+		margin: 5% 18%;
+		border-radius: 10px;
+		box-shadow: 0 0 1vw #101010;
+	}
+
+	.top-bar {
+		height: 55px;
+		margin: 0 auto;
+		position: fixed;
+		top:0;
+		left: 0;
+	}
+
+	#menu li {
+		float: left;
+		display: inline;
+		position: relative;
+	}
+
+	#menu a {
+		line-height: 55px;
+		padding: 0 14px;
+	}
+
+	#menu ul.sub-menu {
+		position: absolute;
+	}
+}
+
+@media (max-width: 650px) {
+	main {
+		margin: 0% 0%;
+	}
+
+	.top-bar {
+		margin : 0 auto;
+		padding: 10px 1px;
+	}
+
+	#menu a {
+		padding: 0 14px;
+		line-height: 40px;
+	}
+}
+
+
 /* PAGE */
 body, header, footer {
 	margin: 0;
@@ -35,14 +85,20 @@ img.float-right {
 	margin: 10px 0px 10px 20px;
 	background-color: #F5F5F5;
 	border-radius: 10px;
+	max-width: 260px;
 }
-
 
 img.float-left {
 	margin: 10px;
 	padding: 10px;
 	background-color: #FCFCFC;
 	border-radius: 10px;
+	max-width: 260px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 body {
@@ -50,12 +106,10 @@ body {
 }
 
 main {
-	margin: 5% 18%;
 	background: #FFFFE8;
-	border-radius: 10px;
 	padding: 0.5% 2%;
-	box-shadow: 0 0 1vw #101010;
 }
+
 
 main.alternate_layout {
 	margin: 5% 4%;
@@ -97,12 +151,7 @@ footer div {
 
 .top-bar {
 	background:#202025;
-	height: 55px;
-	margin: 0 auto;
 	width: 100%;
-	position: fixed;
-	top:0;
-	left: 0;
 }
 
 #menu {
@@ -110,38 +159,21 @@ footer div {
 	width: 75%;
 }
 
+#menu a:visited{
+	color: #F2F2F2;
+}
+
 #menu ul, #menu li {
-	margin: 0 auto;
-	padding: 0;
-	list-style: none;
-}
-
-#menu ul {
-	width: 100%;
-}
-
-#menu li {
-	float: left;
-	display: inline;
-	position: relative;
-}
-
-#menu li.empty {
-	margin: 0vw;
+		margin: 0 auto;
+		padding: 0;
+		list-style: none;
 }
 
 #menu a {
 	display: block;
-	line-height: 55px;
-	padding: 0 14px;
 	text-decoration: none;
 	color: #F2F2F2;
 	font-size: 16px;
-}
-
-#menu a.dropdown-arrow:after {
-	content: "\23F7";
-	margin-left: 5px;
 }
 
 #menu li a:hover {
@@ -154,7 +186,6 @@ footer div {
 	overflow: hidden;
 	width: 150%;
 	background: #444444;
-	position: absolute;
 	z-index: 99;
 	display: none;
 }
@@ -179,7 +210,11 @@ footer div {
 	color:#444444;
 }
 
-#menu a:visited{
-	color: #F2F2F2;
+#menu a.dropdown-arrow:after {
+	content: "\23F7";
+	margin-left: 5px;
 }
 
+#menu ul {
+	width: 100%;
+}
