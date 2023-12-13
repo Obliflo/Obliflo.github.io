@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/5e43bdba41.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Intérêts</title>
+</head>
+<body>
+	<header>
+		<div class="top-bar">
+			<nav id="menu"> 
+				<li class="menu-item"><a href="index.html" ><span class="logo">PSH</span> Sondages </a></li>
+				<ul>
+					<li class="menu-item"><a class="dropdown-arrow" href="faire_un_sondage.html">Faire un sondage</a>
+						<ul class="sub-menu">
+							<li><a href="faire_un_sondage.html#p1">Comment sont fait les sondages ?</a></li>
+							<li><a href="faire_un_sondage.html#p2">Qui fait les sondages ?</a></li>
+							<li><a href="faire_un_sondage.html#p3">Prix</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a class="dropdown-arrow" href="#top">Intérêt</a>
+						<ul class="sub-menu">
+							<li><a href="#p1">Société</a></li>
+							<li><a href="#p2">Marketing</a></li>
+							<li><a href="#p3">Politique</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a class="dropdown-arrow" href="fiabilite.html">Fiabilité</a>
+						<ul class="sub-menu">
+							<li><a href="fiabilite.html#p1">Biais dans les sondages</a></li>
+							<li><a href="fiabilite.html#p2">Estimer la fiabilité</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a class="dropdown-arrow" href="divers.html">Divers</a>
+						<ul class="sub-menu">
+							<li><a href="divers.html#">Histoire des sondages</a></li>
+							<li><a href="divers.html#">À l'étranger</a></li>
+							<li><a href="divers.html#">Lexique</a></li>
+							<li><a href="acteurs.html">Plan des acteurs</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a href="conclusion.html">Conclusion</a></li>
+					<li class="menu-item"><a class="dropdown-arrow" href="nous.html">Nous</a>
+						<ul class="sub-menu">
+							<li><a href="nous.html#p1">Qui sommes-nous ?</a></li>
+							<li><a href="nous.html#p2">Notre avis</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>    
+	<script type="text/javascript">
+		function toggleActive(){
+			var sub = document.getElementById("menu").getElementsByClassName("active");
+			for (var i = 0; i < sub.length; i++){
+				if (sub[i] != this){
+					sub[i].classList.toggle("active");
+				}
+			}
+			this.classList.toggle("active");
+		}
+
+		var submenus = document.getElementById("menu").getElementsByClassName("menu-item");
+		Array.from(submenus).forEach(function (ele){
+			ele.addEventListener("click", toggleActive, false);
+		});
+	</script>
+	</header>
+	
+	<main>
+
+	</main>
+	<footer>
+		<div>
+			Contactez nous !
+		</div>
+	</footer>
+</body>
+</html>
