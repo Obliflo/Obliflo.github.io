@@ -28,6 +28,13 @@
 
 	#menu ul.sub-menu {
 		position: absolute;
+		width: 150%;
+		border-radius: 0px 0px 10px 10px;
+	}
+	
+	#menu a.dropdown-arrow:after {
+		content: "\23F7";
+		margin-left: 5px;
 	}
 }
 
@@ -44,6 +51,16 @@
 	#menu a {
 		padding: 0 14px;
 		line-height: 40px;
+		border-radius: 10px;
+	}
+
+	#menu ul.sub-menu {
+		border-radius: 10px;
+	}
+
+	#menu a.dropdown-arrow:after {
+		content: "\25BC";
+		margin-left: 5px;
 	}
 }
 
@@ -102,7 +119,8 @@ img {
 }
 
 body {
-	background: linear-gradient(to right, #DC3500, #9000DC);
+	background: #9000DC;
+	/*background: linear-gradient(to right, #DC3500, #9000DC);*/
 }
 
 main {
@@ -184,7 +202,6 @@ footer div {
 #menu ul.sub-menu {
 	height: auto;
 	overflow: hidden;
-	width: 150%;
 	background: #444444;
 	z-index: 99;
 	display: none;
@@ -210,10 +227,6 @@ footer div {
 	color:#444444;
 }
 
-#menu a.dropdown-arrow:after {
-	content: "\23F7";
-	margin-left: 5px;
-}
 
 #menu ul {
 	width: 100%;
