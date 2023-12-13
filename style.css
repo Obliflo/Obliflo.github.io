@@ -54,6 +54,14 @@
 		border-radius: 10px;
 	}
 
+	#menu a.dropdown-arrow {
+		pointer-events: none;
+	}
+
+	#menu li.active a.dropdown-arrow {
+		pointer-events: auto;
+	}
+
 	#menu ul.sub-menu {
 		border-radius: 10px;
 	}
