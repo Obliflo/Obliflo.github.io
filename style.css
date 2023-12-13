@@ -62,6 +62,10 @@
 		content: "\25BC";
 		margin-left: 5px;
 	}
+
+	#menu li.active ul.sub-menu {
+		display: block;
+	}
 }
 
 
