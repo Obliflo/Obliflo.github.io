@@ -96,6 +96,10 @@ body, header, footer {
 	margin: 0;
 }
 
+main {
+	min-height: 70vh;
+}
+
 h, h1, h2{
 	clear: both;
 }
@@ -124,19 +128,31 @@ p {
 	float: right;
 }
 
-img.float-right {
+figure.float-right, img.float-right {
 	margin: 10px 0px 10px 20px;
 	background-color: #F5F5F5;
 	border-radius: 10px;
 	max-width: 260px;
 }
 
-img.float-left {
+figure.float-right.big, img.float-right.big {
+	margin: 10px 0px 10px 20px;
+	background-color: #F5F5F5;
+	border-radius: 10px;
+	max-width: 320px;
+}
+
+figure.float-left, img.float-left {
 	margin: 10px;
 	padding: 10px;
 	background-color: #FCFCFC;
 	border-radius: 10px;
 	max-width: 260px;
+}
+
+
+figure > img {
+	border-radius: 10px;
 }
 
 img {
@@ -163,16 +179,28 @@ header {
 	z-index: 999;
 }
 
-footer {
+body>footer {
 	background: #202020;
 	height: 10vh;
 }
 
-footer div {
+body>footer div {
 	margin: 0 auto;
 	color: #FFFFFF;
 	width: 80%;
 	text-align: center;
+}
+
+blockquote {
+	text-align: center;
+}
+
+blockquote p {
+	text-align: center;
+}
+
+main > p {
+	text-indent: 5%;
 }
 
 .logo {
