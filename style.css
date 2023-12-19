@@ -128,6 +128,42 @@ p {
 	float: right;
 }
 
+.flex-container {
+	display: flex;
+	width: 95%;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin: auto;
+}
+
+.flex-container.ends{
+	align-items: center;
+	height: 100%;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 180px;
+	justify-content: center;
+	background-color: #F0F0D8;
+	border-radius: 40px;
+	padding: 5px;
+}
+
+.icon > img {
+	border-radius: 100px;
+}
+
+.icon > figcaption {
+	font-family: Georgia;
+}
+
 figure.float-right, img.float-right {
 	margin: 10px 0px 10px 20px;
 	background-color: #F5F5F5;
