@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/5e43bdba41.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Divers</title>
+</head>
+<body>
+	<header>
+		<div class="top-bar">
+			<nav id="menu"> 
+				<li class="menu-item"><a href="index.html" ><span class="logo">PSH</span> Sondages </a></li>
+				<ul>
+					<li class="menu-item"><a class="dropdown-arrow" href="faire_un_sondage.html">Faire un sondage</a>
+						<ul class="sub-menu">
+							<li><a href="faire_un_sondage.html#p1">Comment sont fait les sondages ?</a></li>
+							<li><a href="faire_un_sondage.html#p2">Qui fait les sondages ?</a></li>
+							<li><a href="faire_un_sondage.html#p3">Prix</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a class="dropdown-arrow" href="interet.html">Intérêt</a>
+						<ul class="sub-menu">
+							<li><a href="interet.html#p1">Société</a></li>
+							<li><a href="interet.html#p2">Marketing</a></li>
+							<li><a href="interet.html#p3">Politique</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a class="dropdown-arrow" href="fiabilite.html">Fiabilité</a>
+						<ul class="sub-menu">
+							<li><a href="fiabilite.html#p1">Biais dans les sondages</a></li>
+							<li><a href="fiabilite.html#p2">Estimer la fiabilité</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a class="dropdown-arrow" href="#top">Divers</a>
+						<ul class="sub-menu">
+							<li><a href="divers.html#p1">Histoire des sondages</a></li>
+							<li><a href="divers.html#p2">À l'étranger</a></li>
+							<li><a href="divers.html#p3">Lexique</a></li>
+							<li><a href="#">Interview</a></li>
+							<li><a href="acteurs.html">Plan des acteurs</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a href="conclusion.html">Conclusion</a></li>
+					<li class="menu-item"><a class="dropdown-arrow" href="nous.html">Nous</a>
+						<ul class="sub-menu">
+							<li><a href="nous.html#p1">Qui sommes-nous ?</a></li>
+							<li><a href="nous.html#p2">Notre avis</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>    
+	<script type="text/javascript">
+		function toggleActive(){
+			var sub = document.getElementById("menu").getElementsByClassName("active");
+			for (var i = 0; i < sub.length; i++){
+				if (sub[i] != this){
+					sub[i].classList.toggle("active");
+				}
+			}
+			this.classList.toggle("active");
+		}
+
+		var submenus = document.getElementById("menu").getElementsByClassName("menu-item");
+		Array.from(submenus).forEach(function (ele){
+			ele.addEventListener("click", toggleActive, false);
+		});
+	</script>
+	</header>
+	
+	<main>
+		<h1>Interview</h1>
+		<p>
+			Dans le cadre de ce projet, nous sommes allés interroger Jacques Bonneau, directeur associé à TMO, un institut d’études et de conseils spécialisé dans les enquêtes quantitatives, analyses de data, études qualitatives et démarches participatives. Vous pouvez trouver leur site <a href="https://www.tmo.fr/">Ici</a>.
+		</p>
+
+		<h4>Pouvez-vous présenter rapidement TMO et le rôle que vous jouez dans cette entreprise ?</h4>
+		<p>
+			TMO est une société qui réalise des sondages, du traitement de données, des démarches participatives et des enquêtes qualitatives pour plusieurs types de clients. Ce peut être des acteurs publics, des territoires comme Rennes Métropole, comme Nantes Métropole, les départements, on peut travailler pour les régions et également pour des grandes structures nationales, par exemple le ministère de la Culture. On travaille également pour des clients nationaux, je m'apprête à faire une grosse enquête sur les mobilités du quotidien pour une association nationale. C'est une grosse partie de notre activité. À côté de ça, on travaille aussi pour des entreprises privées. On fait des enquêtes plutôt marketing.
+		</p>
+		<p>
+			On est implanté à Rennes et on est une quinzaine de collaborateurs permanents. On intègre dans nos effectifs des enquêteurs téléphoniques qui ne sont pas en statut permanent mais qui sont recrutés en fonction des missions qu'on a et donc en fonction des mois, il peut y avoir entre 5 et 20 personnes.
+		</p>
+		<p>
+			On fait des enquêtes quantitatives, ce que vous appelez les sondages, sous la forme soit d’enquêtes en ligne, soit d’enquêtes par téléphone et c'est pour ça qu'on a une équipe d'enquêteurs téléphoniques.
+		</p>
+
+		<h4>On voudrait savoir quelle méthode vous utilisez pour sélectionner les personnes que vous interrogez, que ce soit pour les sondages en ligne ou par téléphone.</h4>
+		<p>
+			Alors pour les sondages par téléphone, on va prendre un exemple simple. Imaginons qu'on fasse une enquête sur la perception de la qualité de la collecte des déchets et du nettoyage sur la métropole de Rennes, on va dans un premier temps réfléchir au nombre d'enquêtes qu'on va faire. Est-ce qu'on va interroger mille personnes, deux mille personnes ou cinq cents personnes ? Ça dépend de deux facteurs : principalement du budget de l'étude et de ce que peuvent mettre les commanditaires ainsi que du niveau de précision, souvent géographique, qu'on souhaite avoir. Si on veut une vision globale sur tout Rennes métropole, on a besoin de faire moins d'interrogations. Mais si on veut avoir des résultats par commune, il faut un minimum d'enquête sur chaque commune et ça va augmenter assez vite le nombre de réponses qu'on va collecter. Ça va très vite, parce que si on veut avoir, par exemple, 200 réponses par commune et qu’il y a vingt communes, tout de suite, on arrive à quatre mille enquêtes.
+		</p>
+		<p>
+			C'est pour ça qu'assez rarement dans ce genre d'étude, on fait les choses par commune. À la place, on va découper Rennes métropole entre la ville de Rennes, la zone nord, la zone ouest, la zone sud, etc. En réalité, on pourra découper en fonction de l'organisation de la collecte des déchets sur le territoire. Plus on aura de zones, plus on va avoir besoin de faire d'enquêtes.
+		</p>
+		<p>
+			Ensuite, on détermine le nombre de personnes qu'on va interroger par zone.
+		</p>
+		<p>
+			C'est, soit directement représentatif de la population et on fera plus d'enquêtes à Rennes et moins d'enquêtes dans les autres zones, soit une équi-répartition et on veut faire le même nombre d'enquêtes sur chacune des zones. Pour se donner la chance de dire des choses assez fiables sur chacune des zones, souvent, on fait l'intermédiaire entre les deux.
+		</p>
+		<p>
+			Ça permet de répartir les enquêtes par territoire.
+		</p>
+		<p>
+			Et une fois qu'on a fait ça, on va chercher dans les bases de données de l'Insee qui nous dit comment les populations se répartissent en fonction de différents critères, sur ce territoire-là, et on se donne des objectifs par tranche d'âge, par genre et souvent par catégorie socioprofessionnelle (CSP).
+		</p>
+		<p>
+			C'est comme ça qu'on fait pour les enquêtes par téléphone.
+		</p>
+		<p>
+			Pour les enquêtes en ligne, c'est un peu plus compliqué parce qu'on n'a pas le même niveau d'information, le même potentiel. On n'a pas forcément les adresses mail de tous les habitants de Rennes donc on ne peut pas leur écrire. On fait soit appel à deux autres entreprises qui gèrent des gros panels et qui nous disent : voilà, sur Rennes métropole, on va pouvoir réaliser mille enquêtes. Et auquel cas on leur dit de faire mille enquêtes.
+		</p>
+		<p>
+			Mais on est souvent au maximum et on a du mal à remplir des quotas. Donc, on va faire un peu au mieux et après, on sera amené à redresser les résultats pour pouvoir donner une image représentative de l'ensemble des réponses. Les enquêtes en ligne sont plus pratiques pour les niveaux moins fins que des agglomérations comme au niveau de régions, voire au niveau national.
+		</p>
+		<p>
+			Il y a un deuxième type d'enquête en ligne, on peut travailler sur d'autres thématiques. Par exemple, en ce moment, on a des contacts qui nous sont fournis par des commanditaires d'études, des personnes qui veulent savoir comment est l'évolution de l'emploi dans des entreprises industrielles du grand ouest. On a des adresses mail de RH des entreprises dans le grand ouest et on leur envoie un mail.
+		</p>
+		<p>
+			Voilà comment on fonctionne.
+		</p>
+
+		<h4>Vous avez dit que vous choisissiez certains critères, comme l'âge, le genre, pour vos quotas. Mais avez-vous été amené à devoir choisir d'autres critères en fonction du sondage qui était demandé.</h4>
+
+		<p>
+			Oui, par exemple, si on fait une question sur les déplacements du quotidien, on peut se dire qu'on va se donner un critère complémentaire : si j'ai ou je n'ai pas une voiture, parce que ça peut quand même beaucoup structurer les choses. Il y a deux solutions par rapport à ça. Soit on se donne un objectif : on veut assurer le nombre de réponses de personnes qui ont une voiture. On peut le faire parce que c'est une information qu'on a par une source extérieure.
+		</p>
+		<p>
+			D'ailleurs, si vous prenez des critères, ça veut dire que c'est une information fiable, qu'on connaît par ailleurs. Parce que si on ne la connaît pas, c'est difficile de définir ce qu'on va en faire. En général, ce sont des données de l'Insee.
+		</p>
+		<p>
+			Donc, soit on se donne un quota sur ça, soit on dit, en gros, il y a soixante-quinze pour cent des personnes qu'on interroge qui ont accès à une voiture. On va laisser faire le hasard. Et si jamais elle n'en est pas à soixante-quinze, mais par malchance, on est à soixante-treize ou soixante-douze, on va, lors du calcul de la pondération, redresser ce critère-là. Il va devenir un critère de post stratification.
+		</p>
+		<p>
+			C'est compliqué à faire, un redressement, parce que ça veut dire qu'il faut avoir les informations. De plus, si on a beaucoup de paramètres, ça veut dire qu'on doit faire du calage sur marges.
+		</p>
+		<p>
+			Si vous souhaitez faire un redressement sur la répartition hommes-femmes croisés par âge, vous allez regarder la base de données de l'Insee sur le territoire de Rennes, par exemple. Vous connaîtrez le nombre d'hommes et le nombre de femmes répartis sur cinq tranches d'âge pour faire des catégories.
+		</p>
+		<p>
+			Et on va être capable, à partir de ces catégories de l'Insee, de donner des poids à chacune de ces catégories. Vous savez combien il y a de personnes interrogées dans notre enquête sur chacune des dix catégories et vous pouvez très rapidement reporter l'effectif théorique par rapport à l'effectif observé pour avoir le poids.
+		</p>
+		<p>
+			Dans notre cas, c'est facile parce qu'il n’y a que deux catégories. Maintenant, si vous faites le genre croisé par sept critères d'âge, croisé par huit CSP, croisé par niveau de diplôme (parce que le niveau de diplôme peut avoir de vraies influences), croisé par j’ai ou je n'ai pas une voiture, croisée par la commune. Là, ça commence à faire beaucoup. On fait donc ce qu'on appelle du calage sur marges.
+		</p>
+		<p>
+			On ne rentre que les objectifs pour chacun des critères et c'est la machine qui calcule ça et là, il y a un vrai algorithme. C'est un vrai travail d'ingénieur statisticien pour créer l'algorithme.
+		</p>
+		<h4>Comment estimez-vous la fiabilité d'un sondage ?</h4>
+		<p>
+			C'est une question bien difficile ! D'abord, ça dépend de ce que vous appelez la fiabilité, parce que la fiabilité d'un sondage, c'est d'abord une question bien posée et il n’y a pas de mesure statistique de la qualité d’une question.
+		</p>
+		<p>
+			Il faudrait en réalité, pour mesurer la qualité des sondages, être capable de mesurer l'intervalle de confiance, mais pour cela, il faut faire un vrai tirage aléatoire.
+		</p>
+		<p>
+			Les méthodes que je vous ai décrites ne correspondent pas du tout à l'intervalle de confiance puisqu'on n'a pas de tirage aléatoire.
+		</p>
+		<p>
+			On n'est pas capable de calculer un intervalle de confiance pour nos résultats sauf à mobiliser des techniques spécifiques de type bootstrap. Pour expliquer ce qu'est le bootstrap, imaginons qu'on ait un gros échantillon de cinq mille réponses. On va tirer à l'intérieur un sous-échantillon de mille puis on va recalculer notre résultat sur les mille et on va réitérer l'opération un grand nombre de fois. On va faire peut-être cinq cents ou mille tirages aléatoires de mille personnes sur cinq mille et on va recalculer le résultat sur une variable d'importance. La répartition de ces mille résultats suit à priori une loi normale et on sera capable de calculer un intervalle de confiance.
+		</p>
+		<p>
+			Mais faire ça est chronophage et souvent les commanditaires n'ont pas le budget pour. On ne le fait que quand il y a des vrais gros enjeux de mesure de la fiabilité statistique. Ça nous est arrivé de le faire, mais c'est assez rare.
+		</p>
+		<p>
+			Après il y en pratique ce qui se fait dans le métier, c'est-à-dire qu'on fait comme si on avait fait un tirage aléatoire et on dit voici l'intervalle de confiance. En réalité, ça ne repose pas sur grand-chose.
+		</p>
+		<p>
+			Et quand je dis ça à mes commanditaires, ils ne veulent pas l'entendre. J'essaie de leur dire que ce n'est pas un tirage aléatoire, qu’on n'est pas capable de calculer l’intervalle de confiance. Parfois ils l'entendent, parfois ils ne l’entendent pas.
+		</p>
+		<p>
+			Mais puisqu'on n'a pas fait un tirage aléatoire, on n'est pas capable de calculer l'intervalle de confiance et il n'y a pas d’approche de la fiabilité pour une enquête par quota.
+		</p>
+		<h4>Est-ce que vous avez un moyen d'être le plus fiable possible malgré le fait que ce ne soit pas un tirage aléatoire?</h4>
+		<p>
+			On essaie, mais c'est compliqué parce qu'il n'y a pas de norme absolue.
+		</p>
+		<p>
+			Voici un exemple de ce qu'on peut faire en se posant des questions de ce type-là. Assez souvent, on fait des enquêtes qui cumulent des enquêtes en ligne et par téléphone.
+		</p>
+		<p>
+			Typiquement, on fait des enquêtes d'insertion des jeunes diplômés, moi, j'en fais beaucoup sur les contrats d'apprentissage et les contrats de professionnalisation. On a des personnes qui partent dans un dispositif de contrat d'apprentissage. On a un fichier de ces personnes-là avec leur adresse mail et leur numéro de téléphone. Parce que ça coûte moins cher de faire une enquête en ligne, on en fait d'abord une.
+		</p>
+		<p>
+			On leur demande : six mois après votre sortie, étiez-vous encore à la recherche d'un emploi ou pas ? On a en général cinq à vingt pour cent de taux de réponse à ces enquêtes, c’est assez variable. On va ensuite contrôler notre échantillon par des enquêtes téléphoniques et on va rappeler les personnes qui n'ont pas répondu à l'enquête en ligne. On va leur poser les questions. Assez régulièrement, on voit des différences de résultats entre l'enquête en ligne et l'enquête par téléphone. Il y a un biais de sélection parce que quand on fait une enquête en ligne, ils reçoivent le mail, lisent et se demandent s'ils ont, ou non, envie de répondre. Quand ils ont plus de temps, à savoir quand ils sont sans activité, ils vont répondre plus facilement. On a donc souvent des taux d'insertion inférieurs en enquête en ligne qu'on a en enquête par téléphone.
+		</p>
+		<p>
+			Vous me direz à raison qu’on a aussi un risque sur l'enquête téléphonique, mais il est a priori moindre puisqu'on va se débrouiller pour appeler les gens à différents moments de la journée et notre métier, c'est de vraiment les inciter à répondre.
+		</p>
+		<p>
+			Tout le monde ne répond pas et il nous faut d'ailleurs de plus en plus de numéros de téléphone pour qu'une personne réponde. Il y a quinze ans, avec cinq ou six numéros de téléphone, on réussissait à faire un questionnaire au téléphone. Maintenant, il nous en faut plutôt douze parce que les gens acceptent moins de répondre.
+		</p>
+		<p>
+			On considérera en général que l'enquête par téléphone sera plus représentative que l'enquête en ligne qui est un questionnaire auto-administré dont on est moins sûr de la qualité des réponses.
+		</p>
+		<h4>Qui sont vos principaux clients ?</h4>
+		<p>
+			Principalement des collectivités locales et territoriales, des métropoles, des départements, des communes. Moi, je travaille pour des ministères, des structures nationales.
+		</p>
+		<p>
+			L'exemple que je vous ai donné, sur l'insertion professionnelle, s'appelle un opco. C'est une association paritaire entre les entreprises d'une branche et les syndicats salariés. Ils discutent entre eux pour pouvoir imaginer le système de formation.
+		</p>
+		<p>
+			On peut travailler aussi pour, je vous l'ai dit, des ministères, des associations.
+		</p>
+		<p>
+			Je travaille par exemple pour le GIFAS, qui est le groupement des industries de l'aéronautique et du spatial. On fait la mesure de l'évolution de l'emploi dans le secteur de l'aéronautique et du spatial. On compte les gens, les salariés chez Ariane, chez Airbus, chez Thales, tous les gens qui travaillent de près ou de loin dans l'aérospatiale et l’aéronautique.
+		</p>
+		<p>
+			On travaille aussi pour des agences de pub, pour des entreprises qui travaillent dans l'agroalimentaire.
+		</p>
+		<p>
+			Je vous invite à aller voir notre site, vous y trouverez la liste des grands types de clients que nous avons.
+		</p>
+		<h4>Savez-vous quels sont, selon leur catégorie, comment sont utilisés les sondages que vous produisez ?</h4>
+
+		<p>
+			C'est une question difficile que vous me posez.
+		</p>
+		<p>
+			On peut déjà espérer qu'il soit utilisé, ce qui n'est pas toujours le cas. Ça peut arriver qu'ils soient utilisés, mais ça dépend de la finalité de l'étude. C'est vraiment très variable.
+		</p>
+		<p>
+			Après, si vous parlez des grandes familles de type d'enquête, j'ai du mal à vous répondre pour tout TMO. Parce que, déjà, je n’ai pas une vision totale de TMO. En tant que directeur associé de TMO, je suis censé avoir une bonne vision de tout TMO, mais j'ai deux autres associés et si je sais à peu près ce qu'ils font, j'ai du mal à catégoriser l'intégralité de leurs études.
+		</p>
+		<p>
+			La réponse est très variable en fonction de l'échelle à laquelle vous la posez, si c'est de la profession, de TMO ou de moi. Je peux vous répondre de manière sectorielle.
+		</p>
+		<p>
+			Les secteurs dans lesquels je travaille se répartissent par quart. Un quart sur l'insertion et l'emploi, combien de salariés, combien d'embauches, quels sont les besoins en recrutement... Je fais pas mal de choses de ce type-là.
+		</p>
+		<p>
+			Je travaille beaucoup sur les mobilités, les déplacements. Je dirais aussi un quart.
+		</p>
+		<p>
+			Un autre quart sur la culture. Par exemple, dans la culture, il n'y a pas que du sondage. On fait du traitement de base de données, des choses de ce type-là. Parce que notre métier, c'est aussi de travailler sur des bases de données, et on en fait de plus en plus. On est un peu dans cette dimension-là du côté des data scientists.
+		</p>
+		<p>
+			Par exemple, on récupère la liste anonymisée de tous les emprunts de quatre cents bibliothèques en France, et on fait un classement des œuvres les plus empruntées en France chaque année.
+		</p>
+		<p>
+			Enfin, il y a un point dont je ne vous ai pas du tout parlé parce que ce n'est pas du tout ma partie, mais on en fait de plus en plus souvent. Ce sont des démarches de concertation, de démocratie participative, on propose à des gens d'intervenir dans des processus citoyens. On les recrute et ensuite, on anime les choses pour qu'ils disent ce qu'ils pensent des problématiques. Donc, c'est une démarche alternative aux démarches par sondage et ça représente le dernier quart.
+		</p>
+		<h4>Et si maintenant, je devais vous demander de réaliser un sondage pour moi, quelles seraient les étapes ?</h4>
+		<p>
+			D'abord, je vous demanderai de rédiger un cahier des charges de ce que vous cherchez à mesurer sur quelle population. J'ai besoin de comprendre vraiment dans le détail ce que vous voulez. Soit, c'est un appel d'offres officiel et je vous fais une réponse écrite. Je peux vous poser quelques questions par mail, mais je n'ai pas le droit de trop vous en poser.
+		</p>
+		<p>
+			Soit on est sur une logique un peu plus partenariale et on échange sur comment vous voyez les choses. Moi, je vous dis qu'on ne va pas pouvoir et je vais vous proposer des méthodes alternatives. À partir de ce moment-là, de ces échanges, je vous fais une proposition budgétaire. Le prix d'une étude est très variable, entre quinze et cent cinquante mille euros. Imaginons que vous ayez vingt mille euros pour financer l'étude. Vous faites un bon de commande. Ensuite, je vais rédiger un questionnaire, je vais vous proposer ce questionnaire et vous demander de le valider.
+		</p>
+		<p>
+			Après, on va tester ce questionnaire auprès d'un petit échantillon de personnes.
+		</p>
+		<p>
+			Si vous êtes courageuses, vous ferez de l'écoute des questions qui sont administrées si on fait du téléphone. Puis vous me donnerez le ok sur le questionnaire et on lance la programmation du questionnaire et la réalisation des enquêtes. Après, je récupère les quatre cents, cinq cents ou mille réponses et je vous fais un joli PowerPoint avec plein de camembert, plein de trucs de ce type-là. J'essaie d'être intelligent pour répondre à vos questions.
+		</p>
+		<p>
+			Puis je vous envoie le PowerPoint et on se fait une petite réunion où je vous présente tout ça.
+		</p>
+		<p>
+			Vous me dites : je veux aller un peu plus loin là-dessus. Ok, je vais un peu creuser. Et après, je vous renvoie le rapport au format PowerPoint. Je vous fais une petite synthèse. Si vous êtes intéressée par les données, je vous renvoie la base de données. Comme ça, vous l’aurez elle-même. Et puis je vous envoie ma facture. Ça vous fera vingt mille euros.
+		</p>
+		<p>
+			Le métier a beaucoup changé, parce qu'on fait des choses de plus en plus différentes.
+		</p>
+		<p>
+			Parfois, on fait juste l'organisation de la collecte. On organise le sondage, on récupère les données, on les met au propre, on fait ce qu'on appelle des corrections, de l'imputation, des choses de ce type-là, et on remet le fichier au commanditaire. On travaille par exemple sur un très, très gros projet pour l'Observatoire de la Vie Étudiante et on vient de terminer les traitements. Entre mars et mai 2023, on a collecté cinquante mille réponses d'étudiants. C'est un questionnaire qui dure une heure, donc il y a beaucoup, beaucoup de questions. On impure la base de données, c’est-à-dire qu’on va chercher les incohérences, on calcule les nouvelles variables, la pondération, plein de choses comme ça.
+		</p>
+		<p>
+			Et une fois qu'on a fait tout ça (et c'est très long comme boulot) on remet la page à l’OVE qui fait l'analyse. C'est une première solution.
+		</p>
+		<p>
+			Une autre solution, c'est qu’on fait tout ça, et après, on édite les tableaux de résultats. On va jusqu'à l'analyse des résultats avec la rédaction d'un rapport du type PowerPoint et parfois même qu'on peut faire de la data visualisation pour des choses plus synthétiques. Ça dépend vraiment des processus. Parfois on fait juste de la collecte, parfois on va jusqu'à accompagner les gens, les commanditaires, sur la data visualisation des représentations dynamiques pour des sites internet, des choses comme ça.
+		</p>
+
+	</main>
+	<footer>
+		<div>
+			Contactez nous !
+		</div>
+	</footer>
+</body>
+</html>
